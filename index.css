@@ -1,8 +1,23 @@
 * {
     padding: 0;
     margin: 0;
+    background-color:transparent;
 }
 
+@media (min-width: 1280px) {
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(7, 500px) ;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+p{
+width:50vw;
+}
 u {
     cursor: pointer;
 }
@@ -11,12 +26,143 @@ a {
     text-decoration: none;
     outline-style: none;
     color: inherit;
+
+  
+}
+.backs {
+    background-color: white;
+}
+
+.item {
+    display: grid;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center; 
+}
+
+.header {
+  
+    height: 17vh;
+    display: flex;
+    background-color:lightgray;
+    font-family: Roboto;
+    justify-content: center;    
+}
+.Menuheader{
+    margin-top: 5vh;
+    width: 80vw;
+    display: flex;
+    justify-content: start;
+    /* border: 1px solid black; */
+    justify-content: space-around;
+}
+
+.main{
+    display: grid;
+    align-self:flex-start;
+    
+}
+.email {
+    width: 1vw;
+    height: 5vh;
+    display: flex;
+    margin-left: -8.3vw;
+    margin-top: 30.5vh;
+}
+
+.keanu{
+    border-radius: 70px;
+    height: 200px;
+    margin: 2vw;
+}
+    
+    
+#busca{
+    background-image: url('img/searchicon.png'); 
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    margin-top: 20px;
+    height:40px;
+    width: 650px;
+    
+}
+
+#spansearch{
+    color: whitesmoke;
+    text-shadow: blue;
+    display: flex;
+    justify-content: space-between;
+    margin:5px;
+    margin-right: 10%;
+
+}
+#searchbar{
+    background-image: url('img/backsearch.jpg'); 
+    background-size: cover;
+}
+#promocoes{
+   background-color:rgb(116, 105, 105);
+    /* background-image: url('img/backsearch.jpg');  */
+    display: inline-flex;
+    justify-content: space-around;
+    text-align: center;
+}
+#forfood{
+    background-color:lightgrey;
+    /* background-image: url('img/backsearch.jpg');  */
+    display: inline-flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+#Depoimentos{
+    background-image: url('img/depo.png'); 
+    background-size: contain;
+   display: inline-block;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 5px 5px 15px;
+
+}
+#parceiros{
+    background-color:rgb(116, 105, 105);
+    /* background-image: url('img/backsearch.jpg');  */
+    display: inline-flex;
+    justify-content: space-evenly;
+    text-align: center;
+ }
+#sobrenos{
+   
+    /* background-image: url('img/backsearch.jpg');  */
+    display: inline-flex;
+    justify-content: space-evenly;
+    text-align: center;
+=======
+
 }
 
 
 
 /********                  FOOTER             ********/
 footer {
+     display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns:repeat(3, 1fr);
+    border:black 1px solid;
+    color: rgb(90, 86, 86);
+}
+footer .empresa{
+    padding: 10;
+    margin: 10px;
+    grid-column: 1/-1;
+    
+}
+
+footer.rede{
+    padding: 10;
+    margin: 10px;
+=======
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns:repeat(4, 1fr);
@@ -31,15 +177,25 @@ footer .empresa{
 }
 footer .rede{
     grid-column: 2/3;
+
     
 }
 
 footer .social{
+
+    grid-column:3/9;
+    
+=======
     grid-column: 3/-1;
+
     
 }
 
 footer .copy{
+
+    display: grid;
+    grid-template-columns: 1fr;
+=======
     border-top: black solid 1px;
     padding-top: 1vh;
     grid-column: 1/-1;
@@ -47,12 +203,17 @@ footer .copy{
     /* border: red 1px solid;  */
     display: grid;
     grid-template-columns: 1fr 5fr 5fr;
+
     grid-template-rows: 1fr;
     align-items: center;
 }
 footer h3{
+
+     color: black;
+=======
     padding: 1vh 2vw; 
     color: black;
+
     
 }
 footer li{
@@ -69,7 +230,11 @@ footer a:hover{
     color: black
 }
 footer img{
+
+    width: 15vw;
+=======
     width: 20vw;
+
     grid-column: 1/2;
     /* border:red solid 1px; */
 }
@@ -79,7 +244,11 @@ footer img{
     /* border:red solid 1px; */
 }
 .copy .termos{
+
+    grid-column:1/4;
+=======
     grid-column:3/-1;
+
     /* border:red solid 1px; */
 } 
  
@@ -94,6 +263,8 @@ footer img{
     width: 4vw;
 }
 
+}
+=======
 
 
 
@@ -176,3 +347,4 @@ footer img{
         padding: 0 10vw;
     }
 }
+
