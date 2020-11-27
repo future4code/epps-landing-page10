@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+u {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    outline-style: none;
+    color: inherit;
+}
