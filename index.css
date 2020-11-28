@@ -1,14 +1,381 @@
+
 * {
-    padding: 0;
-    margin: 0;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;
 }
 
-u {
-    cursor: pointer;
+/* HEAD  */
+header{
+    width: 100%;
 }
 
-a {
+.cabecalho-nav{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 16vh;
+    justify-content: space-between;
+    background-color: lightgrey;
+    align-items: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    -webkit-box-shadow: 1px 1px 1px #333333;
+    box-shadow: 3px 3px 3px #333333; 
+    -moz-box-shadow: 1px 1px 1px #333333;
+    
+}
+
+.logo-nav{
+    height: 22vh;
+}
+
+.conteudo-nav{
+    display: flex;
+}
+
+.flex-nav{
+    display: flex;
+}
+
+.flex-nav a{
     text-decoration: none;
-    outline-style: none;
-    color: inherit;
+    text-align: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-bottom: 1px solid transparent;
+    color: black;
+}
+
+.flex-nav a:hover{
+    border-bottom: 1px solid black;
+}
+
+.sections{
+    display: grid;
+    background-image: url(./img/backsearch.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 86vh;
+    width: 100%;
+    height: 86vh;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.segundo-header{
+    display: grid;
+    grid-row: 2;
+    grid-column: 1 / 4;
+    margin: 0 auto;
+    color:white;
+    font-size: 20px;
+}
+
+body {
+    background-color: lightgrey;
+    width: 100%; 
+}
+
+.produto h2,
+.depoimento h2{
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    background-color: #333333;
+    letter-spacing: 0.1vw;
+    -moz-box-shadow:    0.1vw 0.1vw 0.1vw #333333;
+    box-shadow:         0.1vw 0.1vw 0.1vw #333333;
+    -webkit-box-shadow: 0.1vw 0.1vw 0.1vw #333333;
+}
+
+
+
+.depoimento {
+    height: 98vh;
+    width: 100%;
+    display: block;
+}
+
+.depoimento-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.fotos {
+    width: 10vw;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.keanu{
+    display: block;
+    width: 30%;
+
+}
+
+.keanu img{
+    border-radius: 10%;
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.produto{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    height: 500px;
+    background-color: lightgrey;
+}
+
+
+.produto-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    padding-top: 25px ;
+    border-radius: 50px;
+}
+
+.promocao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    margin: 10px;
+    padding: 20px;
+    width: 25%;
+    -webkit-box-shadow: 5px 5px 5px black;
+    -moz-box-shadow:    5px 5px 5px black;
+    box-shadow:         5px 5px 5px black;
+}
+
+.promocao p{
+    text-transform: capitalize;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    margin-top: 15px;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.promocao img{
+    display: inline-flex;
+    height: 170px;
+    width: 240px;
+}
+
+.contato {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 10vh;
+    align-items: center;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.btn-contato{
+    display: flex;
+    color:white;
+    width: 3vw;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 1vw;
+    padding: 1vh 1vw;
+    margin-left: 48vw;
+    margin-right: 48vw;
+    margin-top: -11.5vh;
+}
+
+.contato h1{
+    font-size: 22px;
+}
+
+.btn-contato:hover{
+    background-color: white;
+    color: black;
+}
+
+/********** FOOTER ************/
+
+.footer{
+    background-color:black;
+    color:white;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.1vw;    
+    padding-left: 1vw;
+    font-size: 14px;
+}
+
+
+/************ RESPONSIVO ****************/
+
+@media screen and (min-device-width: 385px) and (max-device-width:420px){
+header{
+width: 100vw;
+
+}    
+
+.cabecalho-nav{
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    -webkit-box-shadow: 1px 1px 1px #333333;
+    -moz-box-shadow:    1px 1px 1px #333333;
+    box-shadow:         3px 3px 3px #333333;
+    position: relative;
+}
+    
+.logo-nav{
+    width: 25vw;
+    height: 15vh;
+    border-radius: 30px;
+}
+.conteudo-nav{
+    display: flex;
+}
+    
+.flex-nav{
+    display: flex;
+}
+    
+.flex-nav a{
+    text-decoration: none;
+    text-align: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-bottom: 1px solid transparent;
+    color: black;
+}
+
+.flex-nav a:hover{
+    border-bottom: 1px solid black;
+}
+
+
+
+}
+
+
+@media screen and (min-device-width : 310px) and (max-device-width : 420px) {
+        .cabecalho-nav{
+            letter-spacing: 0px;
+            padding: 0;
+            height: 10vh;
+            justify-content: center;
+        }
+    
+    
+        .sections {
+            display: flex;
+            background-image: url(./img/backsearch.jpg);
+            background-position: inherit;
+            background-size: auto 50vh;
+            height:45vh;
+        }
+
+       
+
+        .segundo-header {
+            display: none;
+        }
+
+        .produto h2, .depoimento h2 {
+            font-size: 1em;
+            padding: 15px;
+        }
+
+        .depoimento {
+            display: block;
+            height: 100%;
+        }
+
+        .depoimento-flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .keanu img {
+            width: 30vw;
+            height: 10vh;
+        }
+
+        .produto {
+            height: 100%;
+        }
+
+        .produto-flex {
+            flex-direction: column;
+            margin: 0px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .promocao {
+            width: 80%;
+        }
+
+        .promocao img {
+            display: inline-flex;
+            height: 8vh;
+            width: auto;
+        }
+
+    
+
+        .contato {
+            height: 9vh;
+        }
+        .contato h1 {
+            font-size: 15px;
+        }
+        .footer {
+            height: 15vh;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer p {
+            padding-top: 10px;
+            font-size: 13px;
+        }
+
+       
+
 }
