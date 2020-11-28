@@ -85,6 +85,31 @@ h2 {
 
 
 .contato {
+
+   height: 9vh;
+}
+
+.btn-contato:hover{
+    background-color: white;
+    color: black;
+}
+
+.btn-contato{
+    display: flex;
+    color:white;
+    width: 3vw;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 1vw;
+    padding: 1vh 1vw;
+    margin-left: 48vw;
+    margin-right: 48vw;
+    margin-top: 10vh;
+}
+
+
+=======
     display: flex;
     justify-content: center;
     padding: 5vh 0;
@@ -109,9 +134,26 @@ h2 {
 
 /********** FOOTER ************/
 
+
 .footer{
     background-color:black;
     color:white;
+
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.1vw; 
+    margin-left: 10vw;   
+    margin-right: 10vw;
+=======
     height: 30vh;
     display: flex;
     flex-wrap: wrap;
@@ -176,6 +218,7 @@ h2 {
 }
 .corporativo h3{
     padding: 1vh;
+
 }
 
 @media screen and (min-device-width : 385px) and (max-device-width : 420px) {
@@ -243,6 +286,8 @@ h2 {
         width: 25vw;
         height: 12vh;
     }
+
+=======
     /* Footer responsivo*/
     .footer{
         height: 50vh;
@@ -284,6 +329,7 @@ h2 {
 
 
 
+
 }    
    
 
@@ -304,6 +350,20 @@ h2 {
         height:45vh;
     }
 
+
+    .footer {
+        height: 15vh;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer p {
+        padding-top: 10px;
+        font-size: 13px;
+    }
+
+=======
 
     /* Footer responsivo*/
     .footer{
@@ -441,4 +501,5 @@ h2 {
 #enviar{
     display: flex;
     justify-content: center;
+
 }
