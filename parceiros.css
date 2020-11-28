@@ -85,26 +85,25 @@ h2 {
 
 
 .contato {
-    height: 9vh;
+    display: flex;
+    justify-content: center;
+    padding: 5vh 0;
+}
+.contato a{
+    text-decoration: none;
 }
 
 .btn-contato:hover{
-    background-color: white;
-    color: black;
+    background-color: #333333;
+    color:white;
+    font-weight: bolder;
 }
 
 .btn-contato{
-    display: flex;
+    padding: 2vh 5vw;
     color:white;
-    width: 3vw;
-    justify-content: center;
-    align-items: center;
     background-color: black;
     border-radius: 1vw;
-    padding: 1vh 1vw;
-    margin-left: 48vw;
-    margin-right: 48vw;
-    margin-top: 10vh;
 }
 
 
@@ -388,4 +387,58 @@ h2 {
         height: 10vw;
         }
 
+}
+
+/**************SOBRE*********************/
+#sobre{
+    padding: 1vh 5vw;
+    line-height: 1.5;
+}
+#sobre #tittle-sobre{
+    padding-bottom: 5vh;
+    font-size: 1.5rem;
+}
+#sobre h3{
+    padding: 3vh 0;
+    text-align: center;
+}
+#sobre li{
+    list-style: none;
+    text-align: center;
+    padding: 1vh;
+}
+#sobre p{
+    text-align: justify;
+}
+
+/***************CONTATO **************/
+
+#contato input, #contato textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#contato textarea{
+    height: 20vh;
+}
+#contato label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+#contato{
+    padding: 5vh 5vw;   
+}
+#contato input[type=submit]{
+    padding: 2vh 5vw;
+    color:white;
+    background-color: black;
+    border-radius: 1vw;
+    width: auto;]
+
+}
+#enviar{
+    display: flex;
+    justify-content: center;
 }
