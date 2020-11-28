@@ -85,47 +85,97 @@ h2 {
 
 
 .contato {
-    height: 9vh;
+    display: flex;
+    justify-content: center;
+    padding: 5vh 0;
+}
+.contato a{
+    text-decoration: none;
 }
 
 .btn-contato:hover{
-    background-color: white;
-    color: black;
+    background-color: #333333;
+    color:white;
+    font-weight: bolder;
 }
 
 .btn-contato{
-    display: flex;
+    padding: 2vh 5vw;
     color:white;
-    width: 3vw;
-    justify-content: center;
-    align-items: center;
     background-color: black;
     border-radius: 1vw;
-    padding: 1vh 1vw;
-    margin-left: 48vw;
-    margin-right: 48vw;
-    margin-top: 10vh;
 }
 
 
+/********** FOOTER ************/
 
 .footer{
     background-color:black;
     color:white;
-    height: 20vh;
+    height: 30vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    padding: 5vh 5vw 2vh 5vw;
+    /* border: red solid 1px; */
+    
 }
 
-
-.footer p{
-    display: flex;
+.footer .redes-sociais{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    letter-spacing: 0.1vw;    
+    padding-left: 1vw;
+    font-size: 14px;
+    /* border: red solid 1px; */
+    justify-items: center;
+}
+.footer .redes{
+    align-content: center;
+    
+}
+.redes-sociais a:hover{
+    border-bottom: rgb(77, 66, 5) 1px solid ;
+}
+.redes-sociais #face{
+    width: 5vw;
+}
+.redes-sociais #insta{
+    width: 5vw;
+}
+.redes-sociais #twitter{
+    width: 5vw;
+}
+.redes-sociais #youtube{
+    /* width: 5vw; */
+    height: 5vw;
+}
+.redes-sociais p{
     text-align: center;
+     padding-top: 1vh;
+}
+.copy {
+    display: flex;
     justify-content: center;
-    letter-spacing: 0.1vw; 
-    margin-left: 10vw;   
-    margin-right: 10vw;
+    align-items: center;
+    /* border: red solid 1px; */
+}
+.corporativo li{
+    list-style: none;
+    padding: 1vh;
+}
+.corporativo a{
+    text-decoration: none;
+    color: white;
+}
+.corporativo a:hover{
+    text-decoration: none;
+    color:rgb(77, 66, 5);
+}
+.corporativo h3{
+    padding: 1vh;
 }
 
 @media screen and (min-device-width : 385px) and (max-device-width : 420px) {
@@ -193,6 +243,45 @@ h2 {
         width: 25vw;
         height: 12vh;
     }
+    /* Footer responsivo*/
+    .footer{
+        height: 50vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        padding: 0vh 5vw 5vh 5vw;
+        /* border: red solid 1px; */
+    }
+    
+
+    .footer div{
+        padding: 2vh;
+    }
+    .copy p{
+        text-align: center;
+    }
+    .footer h3, .footer li{
+        text-align: center;
+    }
+        
+    .redes-sociais a:hover{
+        border-bottom: rgb(77, 66, 5) 1px solid ;
+    }
+    .redes-sociais #face{
+        width: 10vw;
+    }
+    .redes-sociais #insta{
+        width: 10vw;
+    }
+    .redes-sociais #twitter{
+        width: 10vw;
+    }
+    .redes-sociais #youtube{
+        /* width: 5vw; */
+        height: 10vw;
+    }
+
 
 
 }    
@@ -215,16 +304,141 @@ h2 {
         height:45vh;
     }
 
-    .footer {
-        height: 15vh;
-        flex-direction: column-reverse;
+
+    /* Footer responsivo*/
+    .footer{
+        height: 60vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
         justify-content: center;
-        align-items: center;
+        align-content: center;
+        padding: 0vh 5vw 5vh 5vw;
+        /* border: red solid 1px; */
     }
+    
 
-    .footer p {
-        padding-top: 10px;
-        font-size: 13px;
+    .footer div{
+        padding: 2vh;
     }
+    .copy p{
+        text-align: center;
+    }
+    .footer h3, .footer li{
+        text-align: center;
+    }
+        
+    .redes-sociais a:hover{
+        border-bottom: rgb(77, 66, 5) 1px solid ;
+    }
+    .redes-sociais #face{
+        width: 10vw;
+    }
+    .redes-sociais #insta{
+        width: 10vw;
+    }
+    .redes-sociais #twitter{
+        width: 10vw;
+    }
+    .redes-sociais #youtube{
+        /* width: 5vw; */
+        height: 10vw;
+        }
+    
 
+}
+
+@media screen and (min-device-width : 420) and (max-device-width : 600px) {
+    /* Footer responsivo*/
+    .footer{
+        height: 200vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        padding: 0vh 5vw 5vh 5vw;
+        /* border: red solid 1px; */
+    }
+    
+
+    .footer div{
+        padding: 2vh;
+    }
+    .copy p{
+        text-align: center;
+    }
+    .footer h3, .footer li{
+        text-align: center;
+    }
+        
+    .redes-sociais a:hover{
+        border-bottom: rgb(77, 66, 5) 1px solid ;
+    }
+    .redes-sociais #face{
+        width: 10vw;
+    }
+    .redes-sociais #insta{
+        width: 10vw;
+    }
+    .redes-sociais #twitter{
+        width: 10vw;
+    }
+    .redes-sociais #youtube{
+        /* width: 5vw; */
+        height: 10vw;
+        }
+
+}
+
+/**************SOBRE*********************/
+#sobre{
+    padding: 1vh 5vw;
+    line-height: 1.5;
+}
+#sobre #tittle-sobre{
+    padding-bottom: 5vh;
+    font-size: 1.5rem;
+}
+#sobre h3{
+    padding: 3vh 0;
+    text-align: center;
+}
+#sobre li{
+    list-style: none;
+    text-align: center;
+    padding: 1vh;
+}
+#sobre p{
+    text-align: justify;
+}
+
+/***************CONTATO **************/
+
+#contato input, #contato textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#contato textarea{
+    height: 20vh;
+}
+#contato label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+#contato{
+    padding: 5vh 5vw;   
+}
+#contato input[type=submit]{
+    padding: 2vh 5vw;
+    color:white;
+    background-color: black;
+    border-radius: 1vw;
+    width: auto;]
+
+}
+#enviar{
+    display: flex;
+    justify-content: center;
 }
