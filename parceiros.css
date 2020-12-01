@@ -1,0 +1,449 @@
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header{
+    width: 100%;
+}
+
+h2 {
+    display: block;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    letter-spacing: 0.1vw;
+    margin-top: 5vh;
+}
+
+.cabecalho-nav{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 16vh;
+    justify-content: space-between;
+    background-color: lightgrey;
+    align-items: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    -webkit-box-shadow: 1px 1px 1px #333333;
+    box-shadow: 3px 3px 3px #333333; 
+    -moz-box-shadow: 1px 1px 1px #333333;
+}
+
+.logo-nav{
+    height: 18vh;
+}
+
+.conteudo-nav{
+    display: flex;
+}
+
+.flex-nav{
+    display: flex;
+}
+
+.flex-nav a{
+    text-decoration: none;
+    text-align: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-bottom: 1px solid transparent;
+    color: black;
+    transition: 0.3s;
+}
+
+.flex-nav a:hover{
+    border-bottom: 1px solid black;
+}
+
+.grid-main {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+.grid {
+    margin-top: 2vh;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.fotos {
+    height: 20vh;
+    width: 20vw;
+}
+
+
+
+.contato {
+    display: flex;
+    justify-content: center;
+    padding: 5vh 0;
+}
+.contato a{
+    text-decoration: none;
+}
+
+.btn-contato:hover{
+    background-color: #333333;
+    color:white;
+    font-weight: bolder;
+}
+
+.btn-contato{
+    padding: 2vh 5vw;
+    color:white;
+    background-color: black;
+    border-radius: 1vw;
+}
+
+
+/********** FOOTER ************/
+
+.footer{
+    background-color:black;
+    color:white;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    padding: 5vh 5vw 2vh 5vw;
+    /* border: red solid 1px; */
+    
+}
+
+.footer .redes-sociais{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    letter-spacing: 0.1vw;    
+    padding-left: 1vw;
+    font-size: 14px;
+    /* border: red solid 1px; */
+    justify-items: center;
+}
+.footer .redes{
+    align-content: center;
+    
+}
+.redes-sociais a:hover{
+    border-bottom: rgb(77, 66, 5) 1px solid ;
+}
+.redes-sociais #face{
+    width: 5vw;
+}
+.redes-sociais #insta{
+    width: 5vw;
+}
+.redes-sociais #twitter{
+    width: 5vw;
+}
+.redes-sociais #youtube{
+    /* width: 5vw; */
+    height: 5vw;
+}
+.redes-sociais p{
+    text-align: center;
+     padding-top: 1vh;
+}
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: red solid 1px; */
+}
+.corporativo li{
+    list-style: none;
+    padding: 1vh;
+}
+.corporativo a{
+    text-decoration: none;
+    color: white;
+}
+.corporativo a:hover{
+    text-decoration: none;
+    color:rgb(77, 66, 5);
+}
+.corporativo h3{
+    padding: 1vh;
+}
+
+@media screen and (min-device-width : 385px) and (max-device-width : 420px) {
+    
+    .cabecalho-nav{
+        display: flex;
+        width: 100%;
+        height: 15vh;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        -webkit-box-shadow: 1px 1px 1px #333333;
+        -moz-box-shadow:    1px 1px 1px #333333;
+        box-shadow:         3px 3px 3px #333333;
+        position: relative;
+    }
+    
+    
+    .logo-nav{
+        width: 25vw;
+        height: 15vh;
+        border-radius: 30px;
+    }
+
+
+    .conteudo-nav{
+        display: flex;
+    }
+
+
+    .flex-nav{
+        display: flex;
+    }
+
+
+    .flex-nav a{
+        text-decoration: none;
+        text-align: center;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        border-bottom: 1px solid transparent;
+        color: black;
+    }
+       
+
+
+    .flex-nav a:hover{
+        border-bottom: 1px solid black;
+    }
+    
+    .produto h2, .depoimento h2 {
+    font-size: 2vh;
+    padding: 0;
+    }
+
+
+
+
+    img p {
+        font-size: 2.5vw;
+    }
+
+
+    .fotos {
+        width: 25vw;
+        height: 12vh;
+    }
+    /* Footer responsivo*/
+    .footer{
+        height: 50vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        padding: 0vh 5vw 5vh 5vw;
+        /* border: red solid 1px; */
+    }
+    
+
+    .footer div{
+        padding: 2vh;
+    }
+    .copy p{
+        text-align: center;
+    }
+    .footer h3, .footer li{
+        text-align: center;
+    }
+        
+    .redes-sociais a:hover{
+        border-bottom: rgb(77, 66, 5) 1px solid ;
+    }
+    .redes-sociais #face{
+        width: 10vw;
+    }
+    .redes-sociais #insta{
+        width: 10vw;
+    }
+    .redes-sociais #twitter{
+        width: 10vw;
+    }
+    .redes-sociais #youtube{
+        /* width: 5vw; */
+        height: 10vw;
+    }
+
+
+
+}    
+   
+
+@media screen and (min-device-width : 310px) and (max-device-width : 420px) {
+    .cabecalho-nav{
+        letter-spacing: 0px;
+        padding: 0;
+        height: 12vh;
+        justify-content: center;
+    }
+    .logo-nav {
+        height: 22vh;
+        padding: 1vh 1vw;
+        margin-top: 1vh;
+        margin-left: -3vh;
+    }
+
+    .sections {
+        display: flex;
+        background-image: url(./img/backsearch.jpg);
+        background-position: inherit;
+        background-size: auto 50vh;
+        height:45vh;
+    }
+
+
+    /* Footer responsivo*/
+    .footer{
+        height: 60vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        padding: 0vh 5vw 5vh 5vw;
+        /* border: red solid 1px; */
+    }
+    
+
+    .footer div{
+        padding: 2vh;
+    }
+    .copy p{
+        text-align: center;
+    }
+    .footer h3, .footer li{
+        text-align: center;
+    }
+        
+    .redes-sociais a:hover{
+        border-bottom: rgb(77, 66, 5) 1px solid ;
+    }
+    .redes-sociais #face{
+        width: 10vw;
+    }
+    .redes-sociais #insta{
+        width: 10vw;
+    }
+    .redes-sociais #twitter{
+        width: 10vw;
+    }
+    .redes-sociais #youtube{
+        /* width: 5vw; */
+        height: 10vw;
+        }
+    
+
+}
+
+@media screen and (min-device-width : 420) and (max-device-width : 600px) {
+    /* Footer responsivo*/
+    .footer{
+        height: 200vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        padding: 0vh 5vw 5vh 5vw;
+        /* border: red solid 1px; */
+    }
+    
+
+    .footer div{
+        padding: 2vh;
+    }
+    .copy p{
+        text-align: center;
+    }
+    .footer h3, .footer li{
+        text-align: center;
+    }
+        
+    .redes-sociais a:hover{
+        border-bottom: rgb(77, 66, 5) 1px solid ;
+    }
+    .redes-sociais #face{
+        width: 10vw;
+    }
+    .redes-sociais #insta{
+        width: 10vw;
+    }
+    .redes-sociais #twitter{
+        width: 10vw;
+    }
+    .redes-sociais #youtube{
+        /* width: 5vw; */
+        height: 10vw;
+        }
+
+}
+
+/**************SOBRE*********************/
+#sobre{
+    padding: 1vh 5vw;
+    line-height: 1.5;
+}
+#sobre #tittle-sobre{
+    padding-bottom: 5vh;
+    font-size: 1.5rem;
+}
+#sobre h3{
+    padding: 3vh 0;
+    text-align: center;
+}
+#sobre li{
+    list-style: none;
+    text-align: center;
+    padding: 1vh;
+}
+#sobre p{
+    text-align: justify;
+}
+
+/***************CONTATO **************/
+
+#contato input, #contato textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#contato textarea{
+    height: 20vh;
+}
+#contato label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+#contato{
+    padding: 5vh 5vw;   
+}
+#contato input[type=submit]{
+    padding: 2vh 5vw;
+    color:white;
+    background-color: black;
+    border-radius: 1vw;
+    width: auto;
+
+}
+#enviar{
+    display: flex;
+    justify-content: center;
+}
